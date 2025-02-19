@@ -1,0 +1,65 @@
+
+// 1
+const dobro = numero => numero * 2;
+
+//1
+console.log(dividir(10, 2)); // Saída: 5
+console.log(dividir(15, 3)); // Saída: 5
+
+
+//3
+const mensagemBoasVindas = nome => {
+    return `Seja bem-vindo, ${nome}!`;
+  };
+
+
+//4
+
+const executarOperacao = (num1, num2, operacao) => {
+    return operacao(num1, num2);
+  };
+  
+ 
+  const soma = (a, b) => a + b;
+  const subtracao = (a, b) => a - b;
+  const multiplicacao = (a, b) => a * b;
+  const divisao = (a, b) => a / b;
+  
+  
+  console.log(executarOperacao(10, 5, soma));         
+  console.log(executarOperacao(10, 5, subtracao));  
+  console.log(executarOperacao(10, 5, multiplicacao)); 
+  console.log(executarOperacao(10, 5, divisao));     
+
+  //5
+
+  const precos = [100, 200, 300, 400, 500];
+
+  const precosComDesconto = precos.map(preco => preco - (preco * 0.10));
+
+  console.log(precosComDesconto); 
+
+  //6
+
+  const idades = [12, 25, 17, 30, 15, 22, 10];
+
+const idadesMenoresDe18 = idades.filter(idade => idade < 18);
+
+console.log(idadesMenoresDe18);
+
+
+//7
+
+const numeros = [2, 3, 4, 5];
+
+
+const produto = numeros.reduce((acumulador, numero) => acumulador * numero, 1);
+
+console.log(produto);
+
+
+
+
+
+  
+  
